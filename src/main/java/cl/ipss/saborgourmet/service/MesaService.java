@@ -93,7 +93,7 @@ public class MesaService {
     // ---------- Métodos auxiliares ----------
 
     /**
-     * Revisa que ningún otra mesa use el mismo número.
+     * Revisa que ninguna otra mesa use el mismo número.
      * - idExcluir: null al crear; el id de la mesa al actualizar,
      *   para que no choque consigo misma.
      */

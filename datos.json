@@ -1,5 +1,71 @@
 {
-  "clientes" : [ ],
-  "mesas" : [ ],
-  "reservas" : [ ]
+  "clientes" : [ {
+    "id" : 1,
+    "rut" : "11111111-1",
+    "nombre" : "Ana Torres",
+    "email" : "ana.torres@correo.cl",
+    "telefono" : "+56911111111"
+  }, {
+    "id" : 2,
+    "rut" : "22222222-2",
+    "nombre" : "Pedro Rojas",
+    "email" : "pedro.rojas@correo.cl",
+    "telefono" : "+56922222222"
+  }, {
+    "id" : 3,
+    "rut" : "33333333-3",
+    "nombre" : "Valentina Muñoz",
+    "email" : "valentina.munoz@correo.cl",
+    "telefono" : "+56933333333"
+  } ],
+  "mesas" : [ {
+    "id" : 1,
+    "numero" : 1,
+    "capacidad" : 2,
+    "ubicacion" : "Terraza",
+    "activa" : true
+  }, {
+    "id" : 2,
+    "numero" : 2,
+    "capacidad" : 4,
+    "ubicacion" : "Salón principal",
+    "activa" : true
+  }, {
+    "id" : 3,
+    "numero" : 3,
+    "capacidad" : 6,
+    "ubicacion" : "Salón principal",
+    "activa" : true
+  }, {
+    "id" : 4,
+    "numero" : 4,
+    "capacidad" : 8,
+    "ubicacion" : "Sala privada",
+    "activa" : false
+  } ],
+  "reservas" : [ {
+    "id" : 1,
+    "clienteId" : 1,
+    "mesaId" : 2,
+    "fecha" : "2026-12-05",
+    "hora" : "20:00",
+    "cantidadPersonas" : 4,
+    "estado" : "ACTIVA"
+  }, {
+    "id" : 2,
+    "clienteId" : 2,
+    "mesaId" : 3,
+    "fecha" : "2026-12-05",
+    "hora" : "21:00",
+    "cantidadPersonas" : 5,
+    "estado" : "ACTIVA"
+  }, {
+    "id" : 3,
+    "clienteId" : 3,
+    "mesaId" : 1,
+    "fecha" : "2026-12-05",
+    "hora" : "20:00",
+    "cantidadPersonas" : 2,
+    "estado" : "CANCELADA"
+  } ]
 }
