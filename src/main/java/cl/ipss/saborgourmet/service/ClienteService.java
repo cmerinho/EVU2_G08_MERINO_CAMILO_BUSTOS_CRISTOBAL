@@ -37,7 +37,6 @@ public class ClienteService {
     /**
      * Busca un cliente por id.
      * @throws RecursoNoEncontradoException (404) si no existe.
-     * También lo usa ReservaService para validar que el cliente exista.
      */
     public Cliente buscarPorId(Long id) {
         return clienteRepository.findById(id)
